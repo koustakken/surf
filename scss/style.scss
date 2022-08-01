@@ -1,9 +1,59 @@
-.header{
+@import "libs";
+@import "media";
+@import "vars";
+@import "fonts";
+@import "global";
 
+.header{
+    position: relative;
+    height: 100vh;
 }
 
 .header__slider{
     &-item{
         height: 100vh;
+        background-image: url(../images/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.slider-item__info-suptitle{
+    margin-bottom: 5px;
+}
+.slider-item__info-suptext{
+    margin-bottom: 8px;
+}
+
+.slider-item__info{
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slider-item__info-title{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 86px;
+    margin-bottom: 48px;
+}
+.slider-item__info-text{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 86px;
+
+}
+.slider-arrows{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 5;
+    &__left{
+        right: 125px;
     }
 }
