@@ -1,2 +1,2 @@
-# mavic
-some basic
+#Live demo
+https://koustakken.github.io/surf/
